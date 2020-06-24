@@ -1,5 +1,9 @@
 # zipack
 
+[zipack.github.io/website](https://zipack.github.io/website/)
+
+zipack is an efficient binary serialization format to replace JSON.
+
 ## Usage
 
 ```JavaScript
@@ -23,11 +27,11 @@ the types zipack support by default:
 - ArrayBuffer
 - null
 
-## code
+## serialize
 
 JS Object ---> Uint8Array
 
-## decode
+## parse
 
 Uint8Array ---> JS Object
 
@@ -46,7 +50,7 @@ parse(serialize({
 }))
 ```
 
-## Object.prototype.zipack
+## [Object].prototype.zipack
 
 like toJSON() in JavaScript, define zipack() for specific Objects, which outputs the types zipack support.
 for example, Date could be stored as number:
