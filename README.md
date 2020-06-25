@@ -1,8 +1,14 @@
-# zipack
+# Zipack
 
-[zipack.github.io/website](https://zipack.github.io/website/)
+[zipack.github.io](https://zipack.github.io/)
 
 zipack is an efficient binary serialization format to replace JSON.
+
+# Install
+
+```shell
+npm install zipack-official
+```
 
 ## Usage
 
