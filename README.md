@@ -1,16 +1,14 @@
-# Zipack
+# Zipack.JS
 
-[zipack.github.io](https://zipack.github.io/)
+Live demo: https://zipack.github.io/#demo
 
-zipack is an efficient binary serialization format to replace JSON.
+Zipack.js is an official encoder/decoder of [Zipack](https://zipack.github.io/) format using JavaScript.
 
 # Install
 
 ```shell
 npm install zipack-official
 ```
-
-## Usage
 
 ```JavaScript
 import zipack from 'zipack.js'
@@ -21,7 +19,7 @@ zipack {
 }
 ```
 
-## default JS Objects
+## Default JS Objects
 
 the types zipack support by default:
 
@@ -33,18 +31,10 @@ the types zipack support by default:
 - ArrayBuffer
 - null
 
-## serialize
-
-JS Object ---> Uint8Array
-
-## parse
-
-Uint8Array ---> JS Object
-
 ## Example
 
 ```javascript
-parse(serialize({
+let obj = {
     number: 123,
     float: 3.14,
     string: 'hello world',
@@ -52,8 +42,14 @@ parse(serialize({
     null: null,
     list: [1, 2, 3],
     map: {negative: -123},
-    buffer: new Uint8Array([1,2,3]) .buffer,
-}))
+    buffer: (new Uint8Array([1,2,3])).buffer
+}
+
+// JS Object ---> Uint8Array
+let buffer = zipack.serialize(obj)
+
+// Uint8Array ---> JS Object
+obj = zipack.parse(buffer)
 ```
 
 ## [Object].prototype.zipack
@@ -72,6 +68,6 @@ Date.prototype.zipack = function () {
 
 ```
 
-## Extension(experimental)
+## Extension (experimental)
 
-register callback(params: Uint8Array) to parse zipack, meanwhile, define zipack() returning Uint8Array to serialize. [Demo](./extend_demo.js)
+register callback(params: Uint8Array) to parse zipack, meanwhile, define zipack() returning Uint8Array to serialize. See [Demo](./extend_demo.js).

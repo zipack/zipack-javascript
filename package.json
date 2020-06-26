@@ -1,7 +1,7 @@
 {
-  "name": "zipack-official",
-  "version": "1.0.1",
-  "description": "```JavaScript\r import zipack from 'zipack.js'",
+  "name": "zipack",
+  "version": "1.0.0",
+  "description": "",
   "main": "zipack.js",
   "scripts": {},
   "repository": {
