@@ -1,3 +1,8 @@
+/**
+ * Version v1.0
+ * 2020-06-26
+ */
+
 // The operands of all bitwise operators are converted to signed 32-bit integers in two's complement format, except for zero-fill right shift which results in an unsigned 32-bit integer.
 
 const typeTable = Array.from({ length: 256 });

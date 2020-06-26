@@ -2,7 +2,7 @@
 
 Live demo: https://zipack.github.io/#demo
 
-Zipack.js is an official encoder/decoder of [Zipack](https://zipack.github.io/) format using JavaScript.
+Zipack.js is an official encoder/decoder of [Zipack](https://zipack.github.io/) format using JavaScript with no dependencies.
 
 # Install
 
