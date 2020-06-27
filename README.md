@@ -70,4 +70,4 @@ Date.prototype.zipack = function () {
 
 ## Extension (experimental)
 
-register callback(params: Uint8Array) to parse zipack, meanwhile, define zipack() returning Uint8Array to serialize. See [Demo](./extend_demo.js).
+register callback(params: Uint8Array) to parse zipack, meanwhile, define zipack() returning Uint8Array to serialize. See [extend-demo.js](./extend_demo.js).

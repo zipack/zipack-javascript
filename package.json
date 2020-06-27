@@ -1,17 +1,23 @@
 {
-  "name": "zipack",
-  "version": "1.0",
-  "description": "",
+  "name": "@zipack/zipack",
+  "version": "0.0.1",
+  "description": "Zipack.js is an official encoder/decoder of Zipack format using JavaScript with no dependencies",
   "main": "zipack.js",
   "scripts": {},
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zipack/zipack-javascript.git"
   },
-  "author": "",
-  "license": "Apache",
+  "author": "Jim",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/zipack/zipack-javascript/issues"
   },
-  "homepage": "https://github.com/zipack/zipack-javascript#readme"
+  "homepage": "https://github.com/zipack/zipack-javascript#readme",
+  "keywords": [
+    "zipack"
+  ]
 }
