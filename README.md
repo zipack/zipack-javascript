@@ -4,15 +4,21 @@ Live demo: https://zipack.github.io/#demo
 
 Zipack.js is an official encoder/decoder of [Zipack](https://zipack.github.io/) format using JavaScript with no dependencies.
 
-# Install
+## Install
 
 ```shell
 npm install zipack-official
 ```
 
+Use ES module in browser or Node.JS:
+
 ```JavaScript
 import zipack from 'zipack.js'
+```
 
+Prototype:
+
+```
 zipack {
     serialize(Object)  // code
     parse(Buffer)      // decode
@@ -54,8 +60,7 @@ obj = zipack.parse(buffer)
 
 ## [Object].prototype.zipack
 
-like toJSON() in JavaScript, define zipack() for specific Objects, which outputs the types zipack support.
-for example, Date could be stored as number:
+like toJSON() in JavaScript, define zipack() for specific Objects, which outputs the types zipack support. For example, Date could be stored as number:
 
 - function：zipack
 - input：none
@@ -65,9 +70,8 @@ for example, Date could be stored as number:
 Date.prototype.zipack = function () {
   return this.getTime();
 };
-
 ```
 
 ## Extension (experimental)
 
-register callback(params: Uint8Array) to parse zipack, meanwhile, define zipack() returning Uint8Array to serialize. See [extend-demo.js](./extend_demo.js).
+Register callback(params: Uint8Array) to parse zipack, meanwhile, define zipack() returning Uint8Array to serialize. See [extend-demo.js](./extend_demo.js).
