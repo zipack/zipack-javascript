@@ -33,7 +33,7 @@ the types zipack support by default:
 - string
 - boolean
 - Array
-- Object (enumerable)
+- plain Object
 - ArrayBuffer
 - null
 
@@ -75,3 +75,7 @@ Date.prototype.zipack = function () {
 ## Extension (experimental)
 
 Register callback(params: Uint8Array) to parse zipack, meanwhile, define zipack() returning Uint8Array to serialize. See [extend-demo.js](./extend_demo.js).
+
+## License
+
+Apache 2.0
