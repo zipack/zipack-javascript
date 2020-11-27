@@ -19,5 +19,6 @@
   "homepage": "https://github.com/zipack/zipack-javascript#readme",
   "keywords": [
     "zipack"
-  ]
+  ],
+  "type": "module"
 }
