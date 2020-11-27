@@ -13,7 +13,7 @@ npm install zipack-official
 Use ES module in browser or Node.JS:
 
 ```JavaScript
-import zipack from 'zipack.js'
+import zipack from 'zipack-official'
 ```
 
 Prototype:
